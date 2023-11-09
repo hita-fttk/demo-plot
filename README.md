@@ -1,4 +1,10 @@
-# demo-plot
+# laravel -version 9~の環境構築方法  
+git clone this repository's url
+docker-compose up -d  
+docker exec -it app bash  
+cd demo-plot  
+composer install  
+chmod 777 ./storage/ -R  
 
 # tailwindcssの反映方法
 公式サイトの手順通りに  
