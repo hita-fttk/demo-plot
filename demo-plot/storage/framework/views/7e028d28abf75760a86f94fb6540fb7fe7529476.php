@@ -17,8 +17,8 @@
         <div class="flex justify-center">
             ToDoリストに追加
         </div>
-        <form action="<?php echo e(route('form.submit')); ?>" method="POST">
-            <?php echo csrf_field(); ?>
+        <form action="<?php echo e(route('done.task')); ?>" method="GET">
+            
             <div class="flex m-4">
                 <span>Title:</span>
                 <input  type="text" value="input" name="title">
@@ -29,11 +29,7 @@
             </div>
             <div class="flex m-4">
                 <span>Deadline:</span>
-                <input type="date" name="date">
-            </div>
-            <div class="flex m-4">
-                <span>Deadline:</span>
-                <input type="time" name="time">
+                <input type="datetime-local" name="date">
             </div>
             <div class="flex justify-center p-4">
                 <button class="border border-green-400">Button</button>
