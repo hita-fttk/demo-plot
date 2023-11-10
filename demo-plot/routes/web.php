@@ -2,6 +2,7 @@
 
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\RegisterController;
+use App\Http\Controllers\TaskController;
 
 /*
 |--------------------------------------------------------------------------
@@ -24,3 +25,4 @@ Route::get('/', function () {
 
 Route::post('register',[RegisterController::class,'store'])->name('form.submit');
 
+Route::get('donedtask',[TaskController::class,'list'])->name('done.task');
